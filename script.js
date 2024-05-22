@@ -1,7 +1,5 @@
 let divContainer = document.querySelector("#container");
 
-let gridSize = 16*16
-
 for (let i = 1; i < 16 + 1; i++) {
 	let divGridRow = document.createElement("div");
 	divGridRow.classList.add("row");
