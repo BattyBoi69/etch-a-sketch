@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Etch-A-Sketch</title>
+		<style>
+			#container {
+				display: flex;
+				flex-direction: column;
+			}
+			#container div {
+				width: 30px;
+				height: 30px;
+				background-color: red;
+				border: 1px solid blue;
+			}
+
+			#container .row {
+				display: flex;
+			}
+
+			.row div {
+				flex-shrink: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="container"></div>
+		<script src="./script.js"></script>
+	</body>
+</html>
