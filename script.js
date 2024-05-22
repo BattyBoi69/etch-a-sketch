@@ -1,11 +1,17 @@
 let divContainer = document.querySelector("#container");
 
-for (let i = 1; i < 16 + 1; i++) {
+let gridSize = 5;
+for (let i = 0; i < gridSize; i++) {
 	let divGridRow = document.createElement("div");
 	divGridRow.classList.add("row");
-	for (let j = 1; j < 16 + 1; j++) {
+	for (let j = 0; j < gridSize; j++) {
 		let divSubGrid = document.createElement("div");
-		divSubGrid.textContent = ((i-1)*10 + j).toString();
+		//divSubGrid.textContent = (i*gridSize + j + 1).toString();
+		
+		divSubGrid.addEventListener("mouseenter", () => {
+			divSubGrid.style.backgroundColor = "black";
+		});
+
 		divGridRow.appendChild(divSubGrid);
 	}
 	divContainer.appendChild(divGridRow);
