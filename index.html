@@ -28,13 +28,25 @@
 				flex: 1;
 				background-color: tomato;
 			}
+			
+			.btn-toggle-on {
+				background-color: green;
+			}
+
+			.btn-toggle-off {
+				background-color: red;
+			}
 
 		</style>
 	</head>
 
 	<body>
-		<button>Change grid precision</button>
+		<button id="gridPrecision">Change grid precision</button>
 		<div id="container"></div>
+		<div id="options">
+			<button id="toggleColorRandomize" class="btn-toggle-off">Random RGB</button>
+			<button id="toggleShading" class="btn-toggle-off">Shading</button>
+		</div>
 		<script src="./script.js"></script>
 	</body>
 </html>
